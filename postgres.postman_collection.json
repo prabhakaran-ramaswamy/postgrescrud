@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "7c2c856f-7c2f-4648-bc32-80e640d678ba",
+		"name": "postgres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "10250813"
+	},
+	"item": [
+		{
+			"name": "get all students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/students"
+			},
+			"response": []
+		},
+		{
+			"name": "create student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Prabhakaran\",\r\n    \"age\":40,\r\n    \"gender\":\"Male\"\r\n}"
+				},
+				"url": "localhost:8080/students"
+			},
+			"response": []
+		},
+		{
+			"name": "get one student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/students/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Update student",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Prabhakaran Ramaswamy\",\r\n    \"age\":40,\r\n    \"gender\":\"Male\"\r\n}"
+				},
+				"url": "localhost:8080/students/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/students/1"
+			},
+			"response": []
+		}
+	]
+}
